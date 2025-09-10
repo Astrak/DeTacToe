@@ -2,7 +2,7 @@
 
 Welcome to DeTacToe, the decentralized tic tac toe! One can use it to bet money on a game against a remote opponent and use the blockchain to ensure the bet is enforced.
 
-The master implementation is live [there](https://detactoe.surge.sh) using the Sepolia testnet.
+The master implementation is live [there](https://de-tactoe.surge.sh) using the Sepolia testnet.
 
 <p align="center">
   <img src="https://i.ibb.co/Rp6PcVW/Bildschirmfoto-von-2022-07-06-13-39-19.png" alt="Screenshot"/>
