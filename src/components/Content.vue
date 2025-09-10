@@ -38,7 +38,7 @@ const connect = () => store.dispatch('connect');
         </p>
         <p v-if="balance! < 0.02" style="text-align:center">
           <br>
-          Your balance is low. Time to <a href="https://goerlifaucet.com/" target="_blank">refuel</a>.
+          Your balance is low. Time to <a href="https://cloud.google.com/application/web3/faucet/ethereum/sepolia" target="_blank">refuel</a>.
         </p>
       </div>
     </div>

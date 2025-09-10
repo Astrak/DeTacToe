@@ -245,12 +245,27 @@ export const store = createStore<State>({
     },
     switchNetwork() {
       window.ethereum
-        .request({ method: 'wallet_switchEthereumChain', params: [{ chainId: '0x5' }] })
+        .request({ method: 'wallet_switchEthereumChain', params: [{ chainId: '0xaa36a7' }] })
         .catch((error) => {
           if ((error as { code: number }).code === 4902) {
             window.ethereum.request({
               method: 'wallet_addEthereumChain',
-              params: [{ chainId: '0x5', rpcUrl: 'https://www.ethercluster.com/goerli' }],
+              params: [
+                {
+                  chainId: '0xaa36a7',
+                  chainName: 'Sepolia',
+                  nativeCurrency: {
+                    name: 'SepoliaETH',
+                    symbol: 'ETH',
+                    decimals: 18,
+                  },
+                  rpcUrls: [
+                    'https://eth-sepolia.g.alchemy.com/v2/' +
+                      String(import.meta.env.ALCHEMY_PROJECT_KEY || ''),
+                  ],
+                  blockExplorerUrls: ['https://sepolia.etherscan.io'],
+                },
+              ],
             });
           }
         });

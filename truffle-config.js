@@ -23,6 +23,9 @@ const HDWalletProvider = require('@truffle/hdwallet-provider');
 const fs = require('fs');
 const mnemonic = fs.readFileSync('.secret').toString().trim();
 
+// Load environment variables
+require('dotenv').config();
+
 module.exports = {
   /**
    * Networks define how you connect to your ethereum client and let you set the
@@ -59,13 +62,13 @@ module.exports = {
     //
     // Useful for deploying to a public network.
     // Note: It's important to wrap the provider as a function to ensure truffle uses a new provider every time.
-    goerli: {
+    sepolia: {
       provider: () =>
         new HDWalletProvider(
           mnemonic,
-          'https://eth-goerli.g.alchemy.com/v2/' + process.env.ALCHEMY_PROJECT_KEY,
+          'https://eth-sepolia.g.alchemy.com/v2/' + process.env.ALCHEMY_PROJECT_KEY,
         ),
-      network_id: 5, // Goerli's id
+      network_id: 11155111, // Sepolia id
       gas: 5500000, // Ropsten has a lower block limit than mainnet
       confirmations: 2, // # of confirmations to wait between deployments. (default: 0)
       timeoutBlocks: 200, // # of blocks before a deployment times out  (minimum/default: 50)

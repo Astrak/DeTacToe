@@ -1,7 +1,7 @@
 export function mapNetworkToName(network: number): string {
   switch (network) {
-    case 5:
-      return 'Goerli Testnet';
+    case 11155111:
+      return 'Sepolia Testnet';
     case 5777:
       return 'Local ganache network';
     default:
@@ -11,8 +11,8 @@ export function mapNetworkToName(network: number): string {
 
 export function getNetworkUnit(network: number): string {
   switch (network) {
-    case 5:
-      return 'GöEth';
+    case 11155111:
+      return 'SepoliaETH';
     case 5777:
       return 'DGCC';
     default:
