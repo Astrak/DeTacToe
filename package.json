@@ -2,9 +2,9 @@
   "name": "DeTacToe",
   "version": "1.0.0",
   "description": "A decentralized tic tac toe game.",
-  "author": "FideX <fidexmr@dnmx.org>",
+  "author": "Astrak",
   "main": "index.html",
-  "repository": "https://github.com/fidexmr/DeTacToe.git",
+  "repository": "https://github.com/Astrak/DeTacToe.git",
   "license": "MIT",
   "scripts": {
     "build-types": "yarn typechain --target=truffle-v5 'build/contracts/*.json'",

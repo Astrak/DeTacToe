@@ -5,7 +5,7 @@
       <p style="text-align: center">You can also call it kitsch tac toe.</p>
       <p style="text-align: center">
         Find the source code
-        <a href="https://github.com/fidexmr/DeTacToe" target="_blank">on Github</a>.
+        <a href="https://github.com/Astrak/DeTacToe" target="_blank">on Github</a>.
       </p>
     </div>
   </div>
